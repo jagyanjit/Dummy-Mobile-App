@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet, ImageBackground } from 'react-native';
-import { useTheme } from '../context/ThemeContext';
+import { useTheme } from '../Context/ThemeContext';
 import { BlurView } from 'expo-blur';
 
 export default function WelcomeScreen({ navigation }) {
