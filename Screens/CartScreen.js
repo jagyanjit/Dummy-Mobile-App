@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, Text, FlatList, Image, Button, StyleSheet, ImageBackground } from 'react-native';
-import { useCartFavorites } from '../Context/CartFavoritesContext';
+import { useCartFavourites } from '../Context/CartFavouritesContext';
 
 export default function CartScreen() {
-  const { cart, removeFromCart } = useCartFavorites();
+  const { cart, removeFromCart } = useCartFavourites();
 
   const handleRemoveFromCart = (book) => {
     removeFromCart(book.id);
