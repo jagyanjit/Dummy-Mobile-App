@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, TextInput, Button, StyleSheet, Text, ImageBackground } from 'react-native';
-import { useTheme } from '../context/ThemeContext';
-import ThemeToggle from '../components/ThemeToggle';
+import { useTheme } from '../Context/ThemeContext';
+import ThemeToggle from '../Components/ThemeToggle';
 
 export default function SignUpScreen({ navigation }) {
   const { theme } = useTheme();
