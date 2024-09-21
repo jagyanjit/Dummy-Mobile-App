@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Text, FlatList, Image, Button, StyleSheet, ImageBackground } from 'react-native';
-import { useCartFavorites } from '../Context/CartFavoritesContext';
+import { useCartFavourites } from '../Context/CartFavouritesContext';
 
 export default function FavouriteScreen() {
-  const { favorites, removeFromFavorites } = useCartFavorites();
+  const { favourites, removeFromFavourites } = useCartFavourites();
 
   const handleRemoveFromFavorites = (book) => {
-    removeFromFavorites(book.id);
+    removeFromFavourites(book.id);
   };
 
   const renderItem = ({ item }) => (
@@ -15,7 +15,7 @@ export default function FavouriteScreen() {
       <Text style={styles.title}>{item.title}</Text>
       <Text style={styles.author}>by {item.author}</Text>
       <Text style={styles.price}>{item.price}</Text>
-      <Button title="Remove from Favorites" onPress={() => handleRemoveFromFavorites(item)} />
+      <Button title="Remove from Favourites" onPress={() => handleRemoveFromFavourites(item)} />
     </View>
   );
 
