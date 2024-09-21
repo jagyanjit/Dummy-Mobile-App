@@ -2,14 +2,14 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
-import { useTheme } from './context/ThemeContext';
+import { useTheme } from './Context/ThemeContext';
 import { MaterialIcons } from '@expo/vector-icons'; // Import icons
-import SignUpScreen from './screens/SignUpScreen';
-import LoginScreen from './screens/LoginScreen';
-import WelcomeScreen from './screens/WelcomeScreen';
-import ItemsListScreen from './screens/ItemsListScreen';
-import FavouriteScreen from './screens/FavouriteScreen';
-import CartScreen from './screens/CartScreen';
+import SignUpScreen from './Screens/SignUpScreen';
+import LoginScreen from './Screens/LoginScreen';
+import WelcomeScreen from './Screens/WelcomeScreen';
+import ItemsListScreen from './Screens/ItemsListScreen';
+import FavouriteScreen from './Screens/FavouriteScreen';
+import CartScreen from './Screens/CartScreen';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
