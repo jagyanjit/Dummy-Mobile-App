@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, FlatList, Button, Image, StyleSheet, ImageBackground, Alert } from 'react-native';
-import { useCartFavorites } from '../context/CartFavoritesContext';
+import { useCartFavorites } from '../Context/CartFavoritesContext';
 
 const bookData = [
   {
