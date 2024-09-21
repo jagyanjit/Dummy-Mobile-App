@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, FlatList, Image, Button, StyleSheet, ImageBackground } from 'react-native';
-import { useCartFavorites } from '../context/CartFavoritesContext';
+import { useCartFavorites } from '../Context/CartFavoritesContext';
 
 export default function FavouriteScreen() {
   const { favorites, removeFromFavorites } = useCartFavorites();
