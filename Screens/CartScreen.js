@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Text, FlatList, Image, Button, StyleSheet, ImageBackground } from 'react-native';
-import { useCartFavourites } from '../Context/CartFavouritesContext';
+import { useCartFavorites } from '../Context/CartFavoritesContext'; // ✅ fixed import
 
 export default function CartScreen() {
-  const { cart, removeFromCart } = useCartFavourites();
+  const { cart, removeFromCart } = useCartFavorites(); // ✅ fixed spelling
 
   const handleRemoveFromCart = (book) => {
-    removeFromCart(book.id);
+    removeFromCart(book.id); // ✅ matches context function
   };
 
   const renderItem = ({ item }) => (
